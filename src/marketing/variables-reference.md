@@ -55,6 +55,9 @@ Most [email templates]({% link marketing/email-template-custom.md -%}) have a se
 
 |Variable|Markup Tag|
 |--- |--- |
+|Customer Full Name|{{var order.getCustomerName()}}|
+|Customer Last Name|{{var order.getCustomerLastname()}}|
+|Customer First Name|{{var order.getCustomerFirstname()}}|
 |Billing Address|{{var formattedBillingAddress&#124;raw}}|
 |Email Order Note|{{var order.getEmailCustomerNote()}}|
 |Order ID|{{var order.increment_id}}|
